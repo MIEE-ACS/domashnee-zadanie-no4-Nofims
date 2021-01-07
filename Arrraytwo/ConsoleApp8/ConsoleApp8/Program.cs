@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace ConsoleApp8
 {
     class Program
     {
@@ -183,8 +186,10 @@ namespace ConsoleApp2
 
                     now[i][j] = avg / elements_count;
                 }
-            }    
+            }
             return now;
         }
     }
 }
+
+
