@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ConsoleApp1
 {
@@ -47,7 +44,7 @@ namespace ConsoleApp1
                     {
                         max = nums[i];
                     }
-                    if (nums[i] > 0) { positiveinNums = true; }
+                    if (nums[i] > 0) {positiveinNums = true;}
                 }
 
                 Console.WriteLine($"\n\nМаксимальный по модулю элемент: {max}\n");
@@ -58,12 +55,12 @@ namespace ConsoleApp1
                     int firstPositive = 0;
                     for (int n = 0; n < N; n++)//ищем первое появление положительного числа
                     {
-                        if (nums[n] > 0)
+                        if(nums[n] > 0)
                         {
                             firstPositive = n;
                             break;
                         }
-                    }
+                    }                
                     int i = firstPositive;
                     int sum = 0;
 
@@ -75,7 +72,7 @@ namespace ConsoleApp1
                             if (nums[i] > 0) { break; }
                             sum += nums[i];
                         }
-                    }
+                    }                 
                     Console.WriteLine($"Сумма элементов массива, расположенных между первым и вторым " +
                         $"положительными числами элементами: {sum}\n");
                 }
@@ -87,7 +84,7 @@ namespace ConsoleApp1
                 int j = 0;
 
                 for (int m = 0; m < N; m++) //вписываем все числа кроме нулей
-                {
+                { 
                     if (nums[m] != 0)
                     {
                         nums2[j] = nums[m];
@@ -97,7 +94,7 @@ namespace ConsoleApp1
 
                 int NumofNulls = N - j;
 
-                for (int h = j; h <= NumofNulls; h++) //вписываем в конец нули
+                for(int h = j; h <= NumofNulls; h++) //вписываем в конец нули
                 {
                     nums2[h] = 0;
                 }
@@ -106,9 +103,8 @@ namespace ConsoleApp1
 
                 Console.ReadKey();
             }
-
-
+                
+            
         }
     }
 }
-
